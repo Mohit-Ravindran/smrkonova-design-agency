@@ -454,6 +454,12 @@
   padding: 10rem 0;
   background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
 }
+.cta__left h2 {
+  font-size: 5.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 2rem;
+}
 .cta__left p {
   font-size: 3rem;
   font-weight: 500;
@@ -5524,6 +5530,37 @@
   font-weight: 500;
   color: #fff;
   margin: 0;
+}
+
+.values {
+  padding: 10rem 0;
+}
+.values__title h2 {
+  font-size: 5.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 2rem;
+}
+.values__title p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0;
+  color: #b9b9b9;
+}
+
+.svc-projects {
+  padding: 10rem 0;
+}
+.svc-projects__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.svc-projects__title h2 {
+  font-size: 5.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 2rem;
 }
 
 * {
