@@ -1,0 +1,334 @@
+.service {
+    padding: 20rem 0 0;
+
+    @media #{$xs} {
+        padding: 14rem 0 0;
+    }
+
+    &__title {
+        text-align: center;
+
+        h1 {
+            font-size: 6.4rem;
+            font-weight: 700;
+            margin: 0 0 3rem;
+            color: #fff;
+            background-color: #000;
+            padding: 0 2rem;
+            display: inline-block;
+            border-radius: 1.6rem;
+
+            @media #{$xs} {
+                font-size: 3.2rem;
+            }
+
+            @media #{$md} {
+                font-size: 4.2rem;
+            }
+        }
+
+        p {
+            color: #B9B9B9;
+            font-size: 2.4rem;
+            font-weight: 500;
+            margin: 0;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &__grid {
+        margin: 8rem 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+
+        @media #{$xs} {
+            grid-template-columns: repeat(1, 1fr);
+            margin: 4rem 0;
+            gap: 1.5rem;
+        }
+
+        @media #{$md} {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__img {
+        width: 5.8rem;
+        height: 5.8rem;
+        border-radius: 50%;
+        background-color: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
+    &__arrow {
+        text-align: end;
+        margin: 2rem 0 0;
+    }
+
+    &__card {
+        background-color: #2B2B2B;
+        border-radius: 4rem;
+        padding: 3rem;
+        border: 0.1rem solid transparent;
+
+        &:hover {
+            border: 0.1rem solid $primary;
+
+            .service__arrow {
+                img {
+                    animation: moveRight 1.5s infinite;
+                }
+            }
+        }
+
+        @media #{$xs} {
+            padding: 2rem;
+        }
+
+
+
+        h4 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin: 6rem 0 1rem;
+            color: #fff;
+
+            @media #{$xs} {
+                font-size: 1.8rem;
+                margin: 2rem 0 1rem;
+            }
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin: 0;
+            color: #B9B9B9;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &__info {
+        background-color: #2B2B2B;
+        padding: 4rem 5rem;
+        border-radius: 4.4rem;
+
+        @media #{$xs} {
+            padding: 2.4rem;
+        }
+    }
+
+    &__info-content {
+        h3 {
+            font-size: 3.6rem;
+            font-weight: 500;
+            margin: 0 0 3rem;
+            color: #fff;
+
+            @media #{$xs} {
+                font-size: 2.4rem;
+                margin: 2rem 0;
+            }
+
+            @media #{$md} {
+                font-size: 2.4rem;
+            }
+        }
+
+        p {
+            font-size: 1.4rem;
+            color: #fff;
+            font-weight: 700;
+            margin: 0;
+
+            span {
+                font-weight: 400;
+                color: #B9B9B9;
+            }
+        }
+    }
+
+    &__info-img {
+        text-align: center;
+    }
+
+    &__count-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+        padding: 10rem 0;
+
+        @media #{$xs} {
+            padding: 6rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__count-card {
+        text-align: center;
+
+        h4 {
+            font-size: 7.2rem;
+            font-weight: 700;
+            margin: 0 0 1.6rem;
+            color: #fff;
+
+            @media #{$xs} {
+                font-size: 2.8rem;
+            }
+
+            @media #{$md} {
+                font-size: 4.2rem;
+            }
+        }
+
+        p {
+            font-size: 2.4rem;
+            font-weight: 400;
+            margin: 0;
+            color: #B9B9B9;
+
+            @media #{$xs} {
+                font-size: 1.8rem;
+            }
+
+            @media #{$md} {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+.voice {
+    background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
+    padding: 10rem 0;
+    margin: 0 0 10rem;
+
+    @media #{$xs} {
+        padding: 6rem 0;
+        margin: 0;
+    }
+
+    &__title {
+        margin: 0 0 7rem;
+
+        @media #{$xs} {
+            margin: 0 0 4rem;
+        }
+
+        h2 {
+            font-size: 6.4rem;
+            font-weight: 700;
+            margin: 0;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+
+            @media #{$xs} {
+                font-size: 3.2rem;
+            }
+
+            @media #{$md} {
+                font-size: 4.2rem;
+            }
+
+            @media #{$lg} {
+                font-size: 4.2rem;
+            }
+
+            span {
+                background-color: #000;
+                padding: 0 2rem;
+                display: inline-block;
+                border-radius: 1.6rem;
+            }
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+        @media #{$xs} {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__card {
+        background-color: #2B2B2B;
+        padding: 2.5rem 2rem;
+        border-radius: 3rem;
+
+        h4 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: #fff;
+            margin: 2.4rem 0 1rem;
+
+            @media #{$xs} {
+                font-size: 1.8rem;
+            }
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin: 0;
+            color: #B9B9B9;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &__icon {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(234.5deg, #FFD190 22.65%, #FF5599 76.31%, #FF14CC 90.61%);
+
+        img {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

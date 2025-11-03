@@ -1,0 +1,204 @@
+.footer {
+    padding: 6rem 0;
+
+    &__one {
+        @media #{$xs} {
+            margin: 0 0 3rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 6.4rem;
+            font-weight: 700;
+            margin: 0 0 5rem;
+            color: #fff;
+
+            @media #{$xs} {
+                font-size: 2.8rem;
+                margin: 0 0 2rem;
+            }
+
+            @media #{$md} {
+                font-size: 3.2rem;
+            }
+
+            @media #{$lg} {
+                font-size: 3.2rem;
+            }
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin: 2rem 0 0;
+            color: #fff;
+
+            @media #{$xm} {
+                font-size: 1.4rem;
+            }
+        }
+
+        .input-group {
+            height: 7rem;
+
+            @media #{$xs} {
+                height: 5rem;
+            }
+
+            input {
+                padding: 0.8rem 1.6rem;
+                color: #000;
+                font-size: 1.6rem;
+                border: none !important;
+                font-weight: 400;
+
+                @media #{$xs} {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .input-group-text {
+            background-color: #fff;
+            border: none !important;
+
+            button {
+                all: unset !important;
+                cursor: pointer !important;
+            }
+        }
+    }
+
+    &__row {
+        padding: 0 0 8rem;
+
+        @media #{$xs} {
+            padding: 0 0 2rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+
+        @media #{$xs} {
+            margin: 0 0 4rem;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        a {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #fff;
+            display: block;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &__end {
+        @media #{$xs} {
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin: 0 0 4rem;
+            color: #fff;
+
+            @media #{$xs} {
+                margin: 0 0 2rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &__call {
+        a {
+            font-size: 2.2rem;
+            font-weight: 500;
+            color: #fff;
+            display: block;
+
+            @media #{$xs} {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 4rem 0 0;
+        flex-wrap: wrap;
+
+        @media #{$xs} {
+            justify-content: center;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            background-color: #fff;
+
+            @media #{$xs} {
+                width: 4rem;
+                height: 4rem;
+            }
+
+            img {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+    }
+
+    &__copyright {
+        border-top: 0.55px solid #FFFFFF26;
+        padding: 3.8rem 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media #{$xs} {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        p {
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #fff;
+            margin: 0;
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+
+        a {
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 500;
+            display: block;
+        }
+    }
+
+}

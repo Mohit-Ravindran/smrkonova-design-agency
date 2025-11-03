@@ -1,0 +1,75 @@
+.map {
+    padding: 20rem 0 10rem;
+
+    @media #{$xs} {
+        padding: 14rem 0 4rem;
+    }
+
+    &__title {
+        text-align: center;
+
+        h2 {
+            font-size: 6.4rem;
+            font-weight: 700;
+            margin: 0 0 3rem;
+            color: #fff;
+            background-color: #000;
+            padding: 0 2rem;
+            display: inline-block;
+            border-radius: 1.6rem;
+
+            @media #{$xs} {
+                font-size: 3.2rem;
+            }
+        }
+
+
+    }
+
+    &__img {
+        iframe {
+            width: 100%;
+        }
+    }
+
+    &__list {
+        padding: 10rem 0 0;
+
+        @media #{$xs} {
+            padding: 6rem 0 0;
+        }
+    }
+
+    &__grid {
+        margin: 7rem 0 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+
+        @media #{$xs} {
+            grid-template-columns: repeat(1, 1fr);
+            margin: 4rem 0 0;
+        }
+    }
+
+    &__card {
+        text-align: center;
+
+        h4 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            margin: 2rem 0;
+            color: #fff;
+
+            @media #{$xs} {
+                font-size: 1.8rem;
+            }
+        }
+
+        a {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #B9B9B9;
+        }
+    }
+}

@@ -1,0 +1,184 @@
+.header {
+  padding: 1.8rem 4rem;
+  background-color: #000;
+  border-radius: 10rem;
+  margin: 3.4rem 3.5rem 2rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9;
+
+  @media #{$xs} {
+    margin: 2rem;
+    padding: 1rem;
+  }
+
+  @media #{$lg} {
+    padding: 1.8rem;
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    flex: 1;
+    display: block;
+
+    img {
+      @media #{$lg} {
+        width: 15rem;
+      }
+    }
+  }
+
+  &__middle {
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+    justify-content: center;
+    flex: 1;
+
+    @media #{$lg} {
+      gap: 2rem;
+    }
+
+    @media #{$xm} {
+      display: none;
+    }
+
+    a {
+      font-size: 1.8rem;
+      font-weight: 500;
+      display: inline-block;
+      color: $para;
+      white-space: nowrap;
+
+      @media #{$lg} {
+        font-size: 1.6rem;
+      }
+    }
+
+    a.active {
+      color: $primary;
+    }
+  }
+
+  &__end {
+    flex: 1;
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    button {
+      display: none;
+      background-color: transparent !important;
+      border: none !important;
+
+      img {
+        width: 4rem;
+      }
+
+
+
+      @media #{$xm} {
+        display: block;
+      }
+    }
+
+    a {
+      background-color: $primary;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 1.2rem 2.4rem;
+      border-radius: 10rem;
+
+      span {
+        color: $white;
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+
+      @media #{$xm} {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+.offcanvas {
+  background-color: #0E0C15 !important;
+}
+
+.menu {
+  padding: 3rem;
+  height: 100%;
+  position: relative;
+
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    img {
+      width: 60%;
+    }
+  }
+
+  &__list {
+    margin: 4rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    a {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #fff;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    a {
+      background-color: $primary;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 1.2rem 2.4rem;
+      border-radius: 10rem;
+      justify-content: center;
+      min-width: 27rem;
+
+      span {
+        color: $white;
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__close {
+    button {
+      all: unset !important;
+      cursor: pointer !important;
+
+      img {
+        width: 3rem;
+      }
+    }
+  }
+
+}

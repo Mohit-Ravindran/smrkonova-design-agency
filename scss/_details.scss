@@ -1,0 +1,210 @@
+.details {
+    padding: 20rem 0 0;
+
+    @media #{$xs} {
+        padding: 14rem 0 0;
+    }
+
+    &__content {
+        margin: 0 0 8rem;
+
+        h2 {
+            font-size: 6.4rem;
+            font-weight: 700;
+            margin: 0;
+            color: #fff;
+            background-color: #000;
+            padding: 0 2rem;
+            display: inline-block;
+            border-radius: 1.6rem;
+            margin: 0 0 4rem;
+
+            @media #{$xs} {
+                font-size: 3.2rem;
+                margin: 0 0 2rem;
+            }
+        }
+
+        p {
+            font-size: 2.4rem;
+            margin: 0 0 3.2rem;
+            font-weight: 500;
+            color: #B9B9B9;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+
+            li {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                gap: 1.2rem;
+
+                span {
+                    font-size: 2.4rem;
+                    font-weight: 700;
+                    color: #fff;
+
+                    @media #{$xs} {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__banner-img {
+        margin: 4rem 0 0;
+    }
+
+    &__list {
+        background-color: #2B2B2B;
+        padding: 2rem;
+        border-radius: 2rem;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    color: #B9B9B9;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    display: block;
+                    border-radius: 1rem;
+                    padding: 1rem 1.6rem;
+                    text-transform: uppercase;
+                }
+
+                a.active {
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    &__contact-box {
+        border: 2px solid #2B2B2B;
+        padding: 3rem;
+        border-radius: 2rem;
+        margin: 2.4rem 0 0;
+        text-align: center;
+
+        h4 {
+            color: #B9B9B9;
+            font-size: 2.4rem;
+            font-weight: 500;
+            margin: 0 0 2rem;
+        }
+
+
+    }
+
+    &__two-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+
+        a {
+
+            &:nth-child(1) {
+                display: -webkit-inline-box;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                gap: 0.8rem;
+                padding: 1.2rem 2.4rem;
+                border-radius: 10rem;
+                background-color: #25D366;
+                justify-content: center;
+
+                span {
+                    color: #fff;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                }
+            }
+
+        }
+    }
+
+    &__accordion {
+        .accordion {
+            --bs-accordion-bg: transparent;
+        }
+
+        .accordion-item {
+            border: none;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: transparent;
+            box-shadow: none;
+            color: #fff;
+        }
+
+        .accordion-button {
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin: 0;
+            color: #fff;
+            border-bottom: 0.83px solid #FFFFFF26;
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            @media #{$xs} {
+                font-size: 1.8rem;
+            }
+        }
+
+        .accordion-body {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #fff;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
+        }
+
+        .accordion-button::after {
+            background-image: url(../assets/img/icons/plus.svg);
+            width: 3.2rem;
+            height: 3.2rem;
+            background-size: unset;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: url(../assets/img/icons/minus.svg);
+        }
+    }
+
+    &__right {
+        position: sticky;
+        top: 12rem;
+
+        @media #{$xs} {
+            margin: 0 0 4rem;
+        }
+    }
+}

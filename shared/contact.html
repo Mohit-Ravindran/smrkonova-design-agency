@@ -1,0 +1,83 @@
+<section class="contact">
+    <div class="container">
+        <div class="contact__title">
+            <h2>
+                <span>Let’s grow your</span>
+                <span>Business Online</span>
+            </h2>
+        </div>
+        <div class="contact__box">
+            <div class="contact__steps">
+                <form id="multiStepForm" method="post" action="../sendmail.php" novalidate>
+                    <!-- Step 1 -->
+                    <div class="contact__one contact-step">
+                        <div class="contact__form-title">
+                            <h3>If you’re ready to start, get in touch with us! </h3>
+                            <span>01/02</span>
+                        </div>
+                        <div class="contact__form">
+                            <h4>Hi! What’s your name?</h4>
+                            <div class="row g-5">
+                                <div class="col-md-4">
+                                    <input type="text" name="name" placeholder="Name" class="form-control" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" name="phone" placeholder="Phone Number" class="form-control"
+                                        required>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="email" name="email" placeholder="Email" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+
+                    <div class="contact__two contact-step" style="display: none;">
+                        <div class="contact__form-title">
+                            <h3>We want to get to know you</h3>
+                            <span>02/02</span>
+                        </div>
+                        <div class="contact__form">
+                            <h4>Sounds good! Anything else you want us to know?</h4>
+                            <div class="mb-3">
+                                <textarea name="message" class="form-control" placeholder="Enter here"
+                                    id="exampleFormControlTextarea1" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 3s -->
+                    <div class="contact__two contact-step" style="display: none;">
+                        <div class="contact__end">
+                            <div class="contact__end-img">
+                                <img src="../assets/img/contact/thank-you.webp" alt="">
+                            </div>
+                            <h4>Thank you for submitting, <br>
+                                we’re exited to chat!</h4>
+                            <p>We will reach out to you soon!</p>
+                            <!-- <div class="contact__end-btn">
+                                <button>Close</button>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="contact__btn">
+                        <div class="contact__flex-btn">
+                            <button type="button" class="outline-btn" id="prevBtn"
+                                style="display: none;">Previous</button>
+                            <button type="button" class="default-btn" id="nextBtn">
+                                <span>Next</span>
+                                <img src="./assets/img/icons/right-arrow.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="contact__bg">
+                <img src="../assets/img/icons/contact-bg.webp" alt="">
+            </div>
+        </div>
+    </div>
+</section>

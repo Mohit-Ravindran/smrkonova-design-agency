@@ -1,0 +1,298 @@
+.contact {
+    padding: 10rem 0 0;
+
+    @media #{$xs} {
+        padding: 6rem 0;
+    }
+
+    @media #{$md} {
+        padding: 6rem 0 0;
+    }
+
+    &__title {
+        margin: 0 0 7rem;
+
+        @media #{$xs} {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 6.4rem;
+            font-weight: 700;
+            margin: 0;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+
+            @media #{$xs} {
+                font-size: 3.2rem;
+            }
+
+            @media #{$md} {
+                font-size: 4.2rem;
+            }
+
+            span {
+                background-color: #000;
+                padding: 0 2rem;
+                display: inline-block;
+                border-radius: 1.6rem;
+            }
+        }
+    }
+
+    &__box {
+        // background-color: #2B2B2B;
+        padding: 3.4rem 4rem;
+        border-radius: 7.4rem;
+        position: relative;
+
+
+
+        @media #{$xs} {
+            border-radius: 3rem;
+            padding: 3.5rem 2rem;
+            background-color: #2B2B2B;
+        }
+
+    }
+
+    &__steps {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__bg {
+        @media #{$xs} {
+            display: none;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            transition: 0.4s;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__form-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 0.73px solid #FFFFFF33;
+        padding: 0 0 2.8rem;
+
+        @media #{$xs} {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        h3 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin: 0;
+            color: #fff;
+
+            @media #{$xs} {
+                font-size: 2rem;
+            }
+        }
+
+        span {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #fff;
+        }
+    }
+
+    &__form {
+        padding: 8rem 0 5rem;
+        border-bottom: 0.73px solid #FFFFFF33;
+
+        @media #{$xs} {
+            padding: 3rem 0;
+        }
+
+        h4 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin: 0 0 3rem;
+            color: #fff;
+
+            @media #{$xs} {
+                text-align: center;
+
+            }
+        }
+
+        input {
+            background-color: #fff;
+            border-radius: 7rem;
+            height: 4.8rem;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #000;
+            border: none;
+            padding: 0.6rem 2rem;
+
+            &:focus {
+                background-color: #fff;
+            }
+
+            &::placeholder {
+                color: #B9B9B9;
+            }
+        }
+
+        textarea {
+            background-color: #fff;
+            border-radius: 2rem;
+            font-size: 1.6rem;
+            font-weight: 400;
+            border: none;
+            padding: 2rem;
+            color: #000 !important;
+
+            &:focus {
+                background-color: #fff;
+                box-shadow: none;
+            }
+
+            &::placeholder {
+                color: #B9B9B9;
+            }
+        }
+    }
+
+    &__btn {
+
+        margin: 7rem 0 0;
+
+
+        @media #{$xs} {
+            margin: 3rem 0 0;
+            justify-content: center;
+        }
+    }
+
+    &__end {
+        text-align: center;
+        padding: 0 4rem 8rem;
+
+        @media #{$xs} {
+            padding: 2rem;
+        }
+
+        h4 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin: 0 0 2.4rem;
+            color: #fff;
+
+            @media #{$xs} {
+                font-size: 2.4rem;
+            }
+        }
+
+        p {
+            font-size: 2.4rem;
+            font-weight: 400;
+            color: #fff;
+            margin: 0 0 2.4rem;
+        }
+
+        button {
+            background-color: #FFB800 !important;
+            border-radius: 10rem;
+            padding: 1rem 2.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 4.4rem;
+            font-size: 1.6rem;
+            color: #000;
+            font-weight: 500;
+            border: none;
+        }
+    }
+
+    &__end-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__flex-btn {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        justify-content: flex-end;
+
+        @media #{$xs} {
+            justify-content: center;
+        }
+    }
+}
+
+.contact-step {
+    display: none;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-group label {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex-direction: column;
+    gap: 1.6rem;
+    cursor: pointer;
+
+    img {
+        width: 5.4rem;
+        height: 5.4rem;
+    }
+
+    span {
+        display: block;
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: #000;
+    }
+}
+
+.radio-group input[type="radio"]:checked+label {
+    background-color: #BCA921;
+
+    span {
+        color: #fff;
+    }
+}
+
+#contactForm {
+    background-image: url(../assets/img/contact/bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: initial;
+}
