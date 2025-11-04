@@ -5364,9 +5364,12 @@
   background-color: #2B2B2B;
   padding: 2.5rem 4rem;
   border-radius: 1.6rem;
+  height: 100%;
+  justify-content: space-between;
 }
 .abt__list ul li img {
   width: 10rem;
+  height: 10rem;
 }
 .abt__list ul li span {
   font-size: 1.8rem;
@@ -5424,7 +5427,7 @@
 }
 
 .step {
-  padding: 10rem 0;
+  padding: 10rem 0 0;
   background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
 }
 .step__title h2 {
