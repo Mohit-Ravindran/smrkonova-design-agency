@@ -1652,29 +1652,27 @@
   padding: 10rem 0;
 
   &__grid {
+    z-index: 2;
+    flex-flow: column;
+    width: 100%;
+    display: flex;
     position: relative;
-    height: 100vh;
-    /* each card fills screen */
-    overflow: hidden;
+    overflow: visible;
+    margin: 6rem 0 0;
   }
 
   &__card {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    // background: #;
-    /* or transparent as you prefer */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: sticky;
+    top: 8rem;
+    padding: 6rem 0;
 
     &:nth-child(even) {
       background: #171A21;
+
     }
 
     &:nth-child(odd) {
+
       background: #0e0c15;
     }
 
@@ -1695,13 +1693,21 @@
       // background-color: #486CEC;
     }
 
-    // &:nth-child(4) {
-    //   background-color: #ECBD93;
-    // }
+    &:nth-child(4) {
+      z-index: 6 !important;
+    }
 
-    // &:nth-child(5) {
-    //   background-color: #64C355;
-    // }
+    &:nth-child(5) {
+      z-index: 7 !important;
+    }
+
+    &:nth-child(6) {
+      z-index: 8 !important;
+    }
+
+    &:nth-child(7) {
+      z-index: 9 !important;
+    }
 
 
     h3 {

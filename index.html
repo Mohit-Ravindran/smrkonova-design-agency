@@ -1134,62 +1134,7 @@
     });
   </script>
 
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
 
-    const cards = gsap.utils.toArray(".expertise__card");
-
-    // Stack all cards below viewport (except first)
-    gsap.set(cards, { y: 1000, scale: 1, zIndex: 0 });
-    let topZ = cards.length;
-    gsap.set(cards[0], { y: 0, zIndex: topZ });
-
-    const sliderTl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".expertise__grid",
-        start: "top 10%",
-        end: "+=" + (cards.length * 500),
-        pin: true,
-        scrub: 1,
-        markers: false, // turn true if you want to debug positions
-        onLeaveBack: () => {
-          // Reset when scrolling back to top
-          topZ = cards.length;
-          gsap.set(cards, { y: 1000, scale: 1, zIndex: 0 });
-          gsap.set(cards[0], { y: 0, zIndex: topZ });
-        }
-      }
-    });
-
-    // Animate each card in sequence
-    cards.forEach((card, i) => {
-      if (i === 0) return;
-
-      sliderTl.addLabel(`card-${i}-start`);
-
-      // Bring new card on top
-      sliderTl.call(() => {
-        topZ += 1;
-        gsap.set(card, { zIndex: topZ });
-      }, null, `card-${i}-start`);
-
-      // Animate previous card up + scale down slightly
-      sliderTl.to(cards[i - 1], {
-        y: -40,
-        scale: 1,
-        duration: 0.6,
-        ease: "power2.out"
-      }, `card-${i}-start`);
-
-      // Bring current card up from below
-      sliderTl.to(card, {
-        y: 0,
-        scale: 1,
-        duration: 0.6,
-        ease: "power2.out"
-      }, `card-${i}-start+=0.0`);
-    });
-  </script>
 
 </body>
 
