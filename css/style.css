@@ -2478,6 +2478,382 @@
   z-index: 2;
 }
 
+.head {
+  padding: 20rem 0 8rem;
+}
+@media (max-width: 767px) {
+  .head {
+    padding: 14rem 0 4rem;
+  }
+}
+.head__title h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 6.4rem;
+  margin: 0 0 4rem;
+  text-align: center;
+}
+.head__title h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin: 0 0 1.6rem;
+  color: #fff;
+}
+.head__title p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 0 0 1.6rem;
+}
+
+.story {
+  padding: 10rem 0;
+  background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
+}
+.story__content h2 {
+  font-size: 5.6rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 1.6rem;
+}
+.story__content h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin: 0 0 1.6rem;
+  color: #fff;
+}
+.story__content p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 0 0 1.6rem;
+}
+.story__img {
+  text-align: center;
+}
+
+.mission {
+  padding: 10rem 0;
+}
+.mission__content h2 {
+  font-size: 5.6rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 4rem;
+}
+.mission__content ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.mission__content ul li {
+  list-style-type: none;
+  background-color: #0073FF;
+  padding: 2.4rem;
+  font-size: 2rem;
+  font-weight: 400;
+  border-radius: 1.6rem;
+  color: #fff;
+}
+
+.core {
+  padding: 10rem 0;
+  background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
+}
+.core__content h2 {
+  font-size: 5.6rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 1.6rem;
+}
+.core__content h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin: 0 0 1.6rem;
+  color: #fff;
+}
+.core__content p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 0 0 1.6rem;
+}
+.core__right {
+  padding: 0 0 0 3rem;
+}
+.core__right h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 2.4rem;
+  color: #fff;
+}
+.core__right ul {
+  padding: 0;
+  margin: 0;
+}
+.core__right ul li {
+  list-style-type: none;
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-size: 2rem;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.2rem 0;
+}
+.core__right ul li:last-child {
+  border-bottom: none;
+}
+.core__right ul li span {
+  font-weight: 700;
+  color: #fff;
+}
+
+.web {
+  padding: 10rem 0;
+}
+.web__title {
+  margin: 0 0 6rem;
+}
+.web__title h2 {
+  font-size: 5.6rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 1.6rem;
+}
+.web__title p {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+.web__list ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.web__list ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.web__list ul li span {
+  color: #fff;
+  font-weight: 700;
+}
+.web__end {
+  margin: 4rem 0 0;
+}
+.web__end h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+}
+
+.team {
+  padding: 10rem 0;
+  background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
+}
+.team__content h2 {
+  font-size: 5.6rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 1.6rem;
+}
+.team__content h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin: 0 0 1.6rem;
+  color: #fff;
+}
+.team__content p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 0 0 1.6rem;
+}
+.team__img {
+  text-align: center;
+}
+
+.value {
+  padding: 10rem 0;
+}
+.value__title h2 {
+  font-size: 5.6rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 1.6rem;
+}
+.value__title p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+}
+.value__list ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.value__list ul li {
+  list-style-type: none;
+  border-radius: 3.2rem;
+  background-color: #2B2B2B;
+  padding: 3.6rem 3.2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+.value__content h3 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin: 0 0 1.2rem;
+}
+.value__content p {
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.idea {
+  padding: 10rem 0;
+  background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
+}
+.idea__title {
+  margin: 0 0 6rem;
+}
+.idea__title h2 {
+  font-size: 5.6rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 1.6rem;
+}
+.idea__title h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin: 0 0 1.6rem;
+  color: #fff;
+}
+.idea__title p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 0 0 1.6rem;
+}
+.idea__list ul {
+  padding: 0;
+  margin: 0;
+}
+.idea__list ul li {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 2fr;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2.4rem 0;
+}
+.idea__list ul li span {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.idea__list ul li p {
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.achievement {
+  padding: 10rem 0;
+}
+.achievement__title {
+  margin: 0 0 6rem;
+}
+.achievement__title h2 {
+  font-size: 5.6rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 1.6rem;
+}
+.achievement__list ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  justify-content: center;
+}
+.achievement__list ul li {
+  list-style-type: none;
+  background-color: #0073FF;
+  padding: 0.8rem;
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.achievement__list ul li span {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.partner {
+  padding: 10rem 0;
+  background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
+}
+.partner__content h2 {
+  font-size: 5.6rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 1.6rem;
+}
+.partner__content h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin: 0 0 1.6rem;
+  color: #fff;
+}
+.partner__content p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 0 0 1.6rem;
+}
+.partner__img {
+  text-align: center;
+}
+
+.local {
+  padding: 10rem 0;
+}
+.local__title h2 {
+  font-size: 5.6rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 1.6rem;
+}
+.local__title p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+}
+
 .project {
   padding: 20rem 0 4rem;
 }
