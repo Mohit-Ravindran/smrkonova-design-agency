@@ -14,9 +14,6 @@
       font-size: 6.8rem;
       font-weight: 700;
       color: $white;
-      // display: flex;
-      // flex-direction: column;
-      // align-items: center;
 
       @media #{$xs} {
         font-size: 3.6rem;
@@ -26,18 +23,6 @@
         font-size: 4.2rem;
       }
 
-
-
-      // span {
-      //   background-color: #000;
-      //   padding: 0 2rem;
-      //   display: inline-block;
-      //   border-radius: 1.6rem;
-
-      //   img {
-      //     animation: arrowUp 1.5s infinite;
-      //   }
-      // }
 
       span.highlight {
         color: #BCA921;
@@ -55,7 +40,7 @@
       margin: 2rem 0 0;
 
       @media #{$xs} {
-        font-size: 3.6rem;
+        font-size: 2rem;
       }
 
       @media #{$md} {
@@ -129,6 +114,7 @@
     @media #{$md} {
       flex-wrap: wrap;
       justify-content: center;
+      margin: 2rem 0 0;
     }
 
 
@@ -293,6 +279,10 @@
   padding: 10rem 0;
   background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
 
+  @media #{$xs} {
+    text-align: center;
+  }
+
   &__content {
     margin: 4rem 0 0;
 
@@ -303,6 +293,11 @@
       text-align: center;
       max-width: 60%;
       margin: 0 auto;
+
+      @media #{$xs} {
+        max-width: 100%;
+        font-size: 1.6rem;
+      }
     }
   }
 }
@@ -310,11 +305,20 @@
 .clients {
   padding: 10rem 0;
 
+  @media #{$xs} {
+    padding: 5rem 0;
+    text-align: center;
+  }
+
   &__grid {
     margin: 4rem 0 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+
+    @media #{$xs} {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__card {
@@ -337,7 +341,10 @@
   padding: 10rem 0;
   background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
 
-
+  @media #{$xs} {
+    padding: 5rem 0;
+    text-align: center;
+  }
 
   &__left {
     h2 {
@@ -345,6 +352,10 @@
       font-weight: 600;
       color: #fff;
       margin: 0 0 2rem;
+
+      @media #{$xs} {
+        font-size: 3rem;
+      }
     }
 
     p {
@@ -352,11 +363,19 @@
       font-weight: 500;
       margin: 0;
       color: $white;
+
+      @media #{$xs} {
+        font-size: 2rem;
+      }
     }
   }
 
   &__link {
     margin: 4rem 0 0;
+
+    @media #{$xs} {
+      margin: 3rem 0;
+    }
 
     a {
       color: #fff;
@@ -1119,6 +1138,10 @@
     @media #{$xs} {
       grid-template-columns: repeat(1, 1fr);
     }
+
+    @media #{$md} {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__card {
@@ -1647,6 +1670,10 @@
 .expertise {
   padding: 10rem 0;
 
+  @media #{$xs} {
+    padding: 5rem 0;
+  }
+
   &__grid {
     z-index: 2;
     flex-flow: column;
@@ -1661,6 +1688,12 @@
     position: sticky;
     top: 8rem;
     padding: 6rem 0;
+
+    @media #{$xs} {
+      padding: 3rem 0;
+      top: 5rem;
+      text-align: center;
+    }
 
     &:nth-child(even) {
       background: #171A21;
@@ -1711,6 +1744,18 @@
       color: #fff;
       font-weight: 600;
       margin: 0 0 2rem;
+
+      @media #{$xs} {
+        font-size: 3.2rem;
+      }
+
+      @media #{$md} {
+        font-size: 3.8rem;
+      }
+
+      @media #{$lg} {
+        font-size: 4rem;
+      }
     }
 
     p {
@@ -1718,6 +1763,14 @@
       font-size: 1.6rem;
       font-weight: 400;
       margin: 0;
+
+      @media #{$xs} {
+        font-size: 1.4rem;
+      }
+    }
+
+    a {
+      margin: 2rem 0 0;
     }
   }
 }
@@ -1725,6 +1778,10 @@
 .faq {
   padding: 10rem 0;
   background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
+
+  @media #{$xs} {
+    padding: 5rem 0;
+  }
 
   &__row {
     margin: 8rem 0 0;
