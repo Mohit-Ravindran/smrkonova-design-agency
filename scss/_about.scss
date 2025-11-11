@@ -147,12 +147,20 @@
     }
 
     &__title {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h1 {
             color: #fff;
             font-weight: 700;
             font-size: 6.4rem;
             margin: 0 0 4rem;
             text-align: center;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
 
         h2 {
@@ -160,6 +168,12 @@
             font-weight: 600;
             margin: 0 0 1.6rem;
             color: #fff;
+
+            @media #{$xs} {
+                text-align: center;
+            }
+
+            font-size: 2.4rem;
         }
 
         p {
@@ -167,6 +181,10 @@
             font-weight: 400;
             color: #fff;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -176,13 +194,24 @@
     padding: 10rem 0;
     background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
 
+    @media #{$xs} {
+        padding: 5rem 0;
+    }
 
     &__content {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h2 {
             font-size: 5.6rem;
             color: #fff;
             font-weight: 700;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
 
         h3 {
@@ -190,6 +219,10 @@
             font-weight: 500;
             margin: 0 0 1.6rem;
             color: #fff;
+
+            @media #{$xs} {
+                font-size: 2.4rem;
+            }
         }
 
         p {
@@ -197,6 +230,10 @@
             font-weight: 400;
             color: #fff;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -208,12 +245,24 @@
 .mission {
     padding: 10rem 0;
 
+    @media #{$xs} {
+        padding: 5rem 0;
+    }
+
     &__content {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h2 {
             font-size: 5.6rem;
             color: #fff;
             font-weight: 700;
             margin: 0 0 4rem;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
 
         ul {
@@ -231,6 +280,10 @@
                 font-weight: 400;
                 border-radius: 1.6rem;
                 color: #fff;
+
+                @media #{$xs} {
+                    font-size: 1.4rem;
+                }
             }
         }
     }
@@ -241,13 +294,24 @@
     padding: 10rem 0;
     background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
 
+    @media #{$xs} {
+        padding: 5rem 0;
+    }
 
     &__content {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h2 {
             font-size: 5.6rem;
             color: #fff;
             font-weight: 700;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
 
         h3 {
@@ -255,6 +319,10 @@
             font-weight: 500;
             margin: 0 0 1.6rem;
             color: #fff;
+
+            @media #{$xs} {
+                font-size: 2.8rem;
+            }
         }
 
         p {
@@ -262,17 +330,30 @@
             font-weight: 400;
             color: #fff;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
     &__right {
         padding: 0 0 0 3rem;
 
+        @media #{$xs} {
+            padding: 0;
+        }
+
         h4 {
             font-size: 2.4rem;
             font-weight: 700;
             margin: 0 0 2.4rem;
             color: #fff;
+
+            @media #{$xs} {
+                font-size: 1.8rem;
+                text-align: center;
+            }
         }
 
         ul {
@@ -286,6 +367,10 @@
                 font-weight: 400;
                 border-bottom: 1px solid #FFFFFF33;
                 padding: 1.2rem 0;
+
+                @media #{$xs} {
+                    font-size: 1.6rem;
+                }
 
                 &:last-child {
                     border-bottom: none;
@@ -305,14 +390,26 @@
 .web {
     padding: 10rem 0;
 
+    @media #{$xs} {
+        padding: 5rem 0;
+    }
+
     &__title {
         margin: 0 0 6rem;
+
+        @media #{$xs} {
+            text-align: center;
+        }
 
         h2 {
             font-size: 5.6rem;
             color: #fff;
             font-weight: 700;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
 
         p {
@@ -320,6 +417,10 @@
             font-size: 2rem;
             font-weight: 400;
             margin: 0;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -340,6 +441,10 @@
                 font-size: 2.4rem;
                 font-weight: 500;
 
+                h3 {
+                    flex: 1;
+                }
+
                 span {
                     color: #fff;
                     font-weight: 700;
@@ -356,6 +461,10 @@
             font-weight: 500;
             margin: 0;
             color: #fff;
+
+            @media #{$xs} {
+                font-size: 1.6rem;
+            }
         }
     }
 }
@@ -364,13 +473,24 @@
     padding: 10rem 0;
     background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
 
+    @media #{$xs} {
+        padding: 5rem 0;
+    }
 
     &__content {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h2 {
             font-size: 5.6rem;
             color: #fff;
             font-weight: 700;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
 
         h3 {
@@ -378,6 +498,10 @@
             font-weight: 500;
             margin: 0 0 1.6rem;
             color: #fff;
+
+            @media #{$xs} {
+                font-size: 2.4rem;
+            }
         }
 
         p {
@@ -385,6 +509,10 @@
             font-weight: 400;
             color: #fff;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -396,12 +524,24 @@
 .value {
     padding: 10rem 0;
 
+    @media #{$xs} {
+        padding: 5rem 0;
+    }
+
     &__title {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h2 {
             font-size: 5.6rem;
             color: #fff;
             font-weight: 700;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
 
         p {
@@ -409,10 +549,18 @@
             font-weight: 400;
             color: #fff;
             margin: 0;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
     &__list {
+        @media #{$xs} {
+            margin: 3rem 0 0;
+        }
+
         ul {
             padding: 0;
             margin: 0;
@@ -438,6 +586,10 @@
             font-size: 2.4rem;
             font-weight: 500;
             margin: 0 0 1.2rem;
+
+            @media #{$xs} {
+                font-size: 2rem;
+            }
         }
 
         p {
@@ -445,6 +597,10 @@
             font-size: 1.6rem;
             font-weight: 400;
             margin: 0;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 }
@@ -453,15 +609,26 @@
     padding: 10rem 0;
     background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
 
+    @media #{$xs} {
+        padding: 5rem 0;
+    }
 
     &__title {
         margin: 0 0 6rem;
+
+        @media #{$xs} {
+            text-align: center;
+        }
 
         h2 {
             font-size: 5.6rem;
             color: #fff;
             font-weight: 700;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
 
         h3 {
@@ -469,6 +636,10 @@
             font-weight: 500;
             margin: 0 0 1.6rem;
             color: #fff;
+
+            @media #{$xs} {
+                font-size: 2.8rem;
+            }
         }
 
         p {
@@ -476,6 +647,10 @@
             font-weight: 400;
             color: #fff;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -492,6 +667,12 @@
                 border-bottom: 1px solid #FFFFFF33;
                 padding: 2.4rem 0;
 
+                @media #{$xs} {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
                 span {
                     color: #fff;
                     font-size: 2.4rem;
@@ -503,6 +684,11 @@
                     font-size: 2rem;
                     font-weight: 400;
                     margin: 0;
+
+                    @media #{$xs} {
+                        text-align: center;
+                        font-size: 1.6rem;
+                    }
                 }
             }
         }
@@ -512,14 +698,26 @@
 .achievement {
     padding: 10rem 0;
 
+    @media #{$xs} {
+        padding: 5rem 0;
+    }
+
     &__title {
         margin: 0 0 6rem;
+
+        @media #{$xs} {
+            text-align: center;
+        }
 
         h2 {
             font-size: 5.6rem;
             color: #fff;
             font-weight: 700;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
     }
 
@@ -542,10 +740,15 @@
                 align-items: center;
                 gap: 1.2rem;
 
+
                 span {
                     font-size: 2rem;
                     font-weight: 500;
                     color: #fff;
+
+                    @media #{$xs} {
+                        font-size: 1.4rem;
+                    }
                 }
             }
         }
@@ -556,13 +759,24 @@
     padding: 10rem 0;
     background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
 
+    @media #{$xs} {
+        padding: 5rem 0;
+    }
 
     &__content {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h2 {
             font-size: 5.6rem;
             color: #fff;
             font-weight: 700;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
 
         h3 {
@@ -570,6 +784,10 @@
             font-weight: 500;
             margin: 0 0 1.6rem;
             color: #fff;
+
+            @media #{$xs} {
+                font-size: 2.8rem;
+            }
         }
 
         p {
@@ -577,6 +795,10 @@
             font-weight: 400;
             color: #fff;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -588,12 +810,24 @@
 .local {
     padding: 10rem 0;
 
+    @media #{$xs} {
+        padding: 5rem 0;
+    }
+
     &__title {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h2 {
             font-size: 5.6rem;
             color: #fff;
             font-weight: 700;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
 
         p {
@@ -601,6 +835,10 @@
             font-weight: 400;
             color: #fff;
             margin: 0;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
 
     }

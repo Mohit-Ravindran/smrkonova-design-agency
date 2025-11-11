@@ -1211,14 +1211,10 @@
     }
 
     h2 {
-      font-size: 6.4rem;
-      font-weight: 700;
-      margin: 0 0 3rem;
+      font-size: 5.6rem;
       color: #fff;
-      background-color: #000;
-      padding: 0 2rem;
-      display: inline-block;
-      border-radius: 1.6rem;
+      font-weight: 700;
+      margin: 0 0 1.6rem;
 
       @media #{$xs} {
         font-size: 2.8rem;
