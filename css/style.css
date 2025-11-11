@@ -1157,7 +1157,7 @@
 }
 .news__flex {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   margin: 0 0 8rem;
 }
@@ -1205,9 +1205,6 @@
   }
 }
 .news__title h2 span {
-  background-color: #000;
-  padding: 0 2rem;
-  display: inline-block;
   border-radius: 1.6rem;
 }
 .news__grid {
@@ -4622,6 +4619,7 @@
 
 .footer {
   padding: 6rem 0;
+  background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
 }
 @media (max-width: 767px) {
   .footer__one {
