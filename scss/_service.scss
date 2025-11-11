@@ -269,7 +269,7 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
 
-        @media #{$xs} {
+        @media #{$xm} {
             grid-template-columns: repeat(1, 1fr);
         }
     }
@@ -278,6 +278,10 @@
         background-color: #2B2B2B;
         padding: 2.5rem 2rem;
         border-radius: 3rem;
+
+        @media #{$xs} {
+            text-align: center;
+        }
 
         h4 {
             font-size: 2.4rem;

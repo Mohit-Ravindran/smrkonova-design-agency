@@ -4,12 +4,25 @@
     align-items: center;
     justify-content: center;
 
+
+    @media #{$xs} {
+        padding: 14rem 0 0;
+    }
+
     &__content {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h1 {
             font-size: 5.6rem;
             font-weight: 700;
             margin: 0 0 2rem;
             color: $white;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
 
         p {
@@ -17,6 +30,10 @@
             font-weight: 500;
             margin: 0 0 2rem;
             color: #b9b9b9;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 }
@@ -25,12 +42,24 @@
     padding: 10rem 0;
     background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
 
+    @media #{$xs} {
+        padding: 5rem 0;
+    }
+
     &__content {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h2 {
             font-size: 5.2rem;
             font-weight: 600;
             color: #fff;
             margin: 0 0 2rem;
+
+            @media #{$xs} {
+                font-size: 3.8rem;
+            }
         }
 
         p {
@@ -38,6 +67,10 @@
             font-weight: 500;
             margin: 0 0 2rem;
             color: #b9b9b9;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -91,12 +124,24 @@
 .trust {
     padding: 10rem 0;
 
+    @media #{$xs} {
+        padding: 10rem 0;
+    }
+
     &__title {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h2 {
             font-size: 5.2rem;
             font-weight: 600;
             color: #fff;
             margin: 0 0 2rem;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
 
         p {
@@ -104,6 +149,10 @@
             font-weight: 500;
             margin: 0;
             color: #b9b9b9;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -136,6 +185,10 @@
                     font-weight: 500;
                     color: #fff;
                     margin: 0;
+
+                    @media #{$xs} {
+                        font-size: 1.8rem;
+                    }
                 }
 
                 p {
@@ -153,12 +206,24 @@
     padding: 10rem 0 0;
     background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
 
+    @media #{$xs} {
+        padding: 5rem 0;
+    }
+
     &__title {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h2 {
             font-size: 5.2rem;
             font-weight: 600;
             color: #fff;
             margin: 0 0 2rem;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
 
         p {
@@ -166,6 +231,10 @@
             font-weight: 500;
             margin: 0;
             color: #b9b9b9;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -215,12 +284,24 @@
 .tool {
     padding: 10rem 0;
 
+    @media #{$xs} {
+        padding: 5rem 0;
+    }
+
     &__title {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h2 {
             font-size: 5.2rem;
             font-weight: 600;
             color: #fff;
             margin: 0 0 2rem;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
 
         p {
@@ -228,6 +309,10 @@
             font-weight: 500;
             margin: 0;
             color: #b9b9b9;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -241,12 +326,24 @@
     padding: 10rem 0;
     background: linear-gradient(98.64deg, #171A21 0.52%, rgba(23, 26, 33, 0) 99.49%);
 
+    @media #{$xs} {
+        padding: 5rem 0;
+    }
+
     &__title {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h2 {
             font-size: 5.2rem;
             font-weight: 600;
             color: #fff;
             margin: 0 0 2rem;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
 
         p {
@@ -254,6 +351,10 @@
             font-weight: 500;
             margin: 0;
             color: #b9b9b9;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -302,12 +403,24 @@
 .values {
     padding: 10rem 0;
 
+    @media #{$xs} {
+        padding: 5rem 0;
+    }
+
     &__title {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h2 {
             font-size: 5.2rem;
             font-weight: 600;
             color: #fff;
             margin: 0 0 2rem;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
         }
 
         p {
@@ -315,12 +428,20 @@
             font-weight: 500;
             margin: 0;
             color: #b9b9b9;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 }
 
 .svc-projects {
     padding: 10rem 0;
+
+    @media #{$xs} {
+        padding: 5rem 0;
+    }
 
     &__title {
         display: flex;
@@ -332,6 +453,10 @@
             font-weight: 600;
             color: #fff;
             margin: 0 0 2rem;
+
+            @media #{$xs} {
+                font-size: 4rem;
+            }
 
         }
     }
