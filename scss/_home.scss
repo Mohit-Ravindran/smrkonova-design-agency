@@ -1785,4 +1785,10 @@
       background-image: url(../assets/img/icons/minus.svg);
     }
   }
+
+  &__img {
+    @media #{$xs} {
+      margin: 3rem 0 0;
+    }
+  }
 }

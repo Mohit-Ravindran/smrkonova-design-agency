@@ -1745,6 +1745,11 @@
 .faq__accordion .accordion-button:not(.collapsed)::after {
   background-image: url(../assets/img/icons/minus.svg);
 }
+@media (max-width: 767px) {
+  .faq__img {
+    margin: 3rem 0 0;
+  }
+}
 
 .contact {
   padding: 10rem 0 0;
