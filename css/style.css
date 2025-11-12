@@ -162,6 +162,124 @@
   width: 3rem;
 }
 
+.dropdowns__toggle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: inline-block;
+  color: #b9b9b9;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* Dropdown wrapper */
+.dropdowns {
+  position: relative;
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* centers it horizontally */
+  width: 60vw;
+  /* full-width feel but not touching both edges */
+  background: #111;
+  padding: 4rem 4rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  justify-content: space-between;
+  z-index: 10;
+  border-radius: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, 10px);
+  transition: all 0.3s ease;
+}
+
+.mega-menu__item {
+  text-align: center;
+  flex: 1;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #000;
+  padding: 2rem;
+  border-radius: 1.6rem;
+  white-space: wrap !important;
+}
+
+.mega-menu__item img {
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+.mega-menu__item h4 {
+  color: #fff;
+  margin-top: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* Hover effect to show menu */
+.dropdowns:hover .mega-menu {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+  top: 2.9rem;
+}
+
+.menu__dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__dropdown-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: left;
+  padding: 0.8rem 0;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__dropdown-toggle .arrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.menu__dropdown-list {
+  display: none;
+  flex-direction: column;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.menu__dropdown-list a {
+  color: #ccc;
+  padding: 0.4rem 0;
+  text-decoration: none;
+}
+
+.menu__dropdown.open .menu__dropdown-list {
+  display: flex;
+}
+
+.menu__dropdown.open .arrow {
+  transform: rotate(180deg);
+}
+
 .banner {
   padding: 20rem 0 0;
 }

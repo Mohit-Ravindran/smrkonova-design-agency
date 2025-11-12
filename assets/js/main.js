@@ -37,9 +37,9 @@ fetch('/./shared/header.html')
     .then(res => res.text())
     .then(data => {
         document.getElementById('header').innerHTML = data;
-        setActiveLink(); // Optional: highlight the active nav item
+        setActiveLink(); // highlight active nav item (optional)
 
-        // Add scroll event listener AFTER header is loaded
+        // Scroll effect for header
         const header = document.getElementById('mainHeader');
         window.addEventListener('scroll', function () {
             if (window.scrollY > 0) {
@@ -47,6 +47,13 @@ fetch('/./shared/header.html')
             } else {
                 header.classList.remove('scrolled');
             }
+        });
+
+        // ✅ Add dropdown toggle functionality AFTER header is loaded
+        document.querySelectorAll('.menu__dropdown-toggle').forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.parentElement.classList.toggle('open');
+            });
         });
     })
     .catch(error => console.error('Error loading header:', error));

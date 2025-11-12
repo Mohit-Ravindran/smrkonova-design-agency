@@ -6,7 +6,33 @@
             </a>
             <div class="header__middle">
                 <a href="/" data-page="home">Home</a>
-                <a href="/service" data-page="service">Services</a>
+                <div class="dropdowns">
+                    <div data-page="service" class="dropdowns__toggle">Services ▾</div>
+                    <div class="mega-menu">
+                        <a href="/services/website-development-company-in-bangalore" class="mega-menu__item">
+                            <img src="/../assets/img/service/website-development/banner.png" alt="Service 1" />
+                            <h4>Web Development</h4>
+                        </a>
+                        <a href="/services/ui-ux-design-services-in-bangalore" class="mega-menu__item">
+                            <img src="/../assets/img/service/ui-ux/banner.png" alt="Service 1" />
+                            <h4>UI/UX</h4>
+                        </a>
+                        <a href="/services/digital-branding-company-in-bangalore" class="mega-menu__item">
+                            <img src="/../assets/img/service/branding/banner.png" alt="Service 1" />
+                            <h4>Branding</h4>
+                        </a>
+                        <a href="/services/ecommerce-website-development-company-in-bangalore" class="mega-menu__item">
+                            <img src="/../assets/img/service/ecommerce/banner.png" alt="Service 1" />
+
+                            <h4>E-Commerce Website</h4>
+                        </a>
+                        <a href="/services/digital-marketing-company-in-bangalore." class="mega-menu__item">
+                            <img src="/../assets/img/service/marketing/banner.png" alt="Service 1" />
+                            <h4>Digital Marketing</h4>
+                        </a>
+                    </div>
+                </div>
+                <!-- <a href="/service" data-page="service">Services</a> -->
                 <a href="/projects" data-page="projects">Projects</a>
                 <a href="/about" data-page="about">About Us</a>
                 <a href="https://smrkonova.com/blog/" data-page="blog">Blog</a>
@@ -38,7 +64,20 @@
         </div>
         <div class="menu__list">
             <a href="/">Home</a>
-            <a href="/../service">Services</a>
+            <!-- Services with dropdown -->
+            <div class="menu__dropdown">
+                <button class="menu__dropdown-toggle">
+                    Services
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="menu__dropdown-list">
+                    <a href="/services/website-development-company-in-bangalore">Web Development</a>
+                    <a href="/services/ui-ux-design-services-in-bangalore">UI/UX Design</a>
+                    <a href="/services/digital-branding-company-in-bangalore">Branding</a>
+                    <a href="/services/ecommerce-website-development-company-in-bangalore">E-Commerce Website</a>
+                    <a href="/services/digital-marketing-company-in-bangalore.html">Digital Marketing</a>
+                </div>
+            </div>
             <a href="/../projects">Projects</a>
             <a href="/../about">About Us</a>
             <a href="https://smrkonova.com/blog/">Blog</a>
