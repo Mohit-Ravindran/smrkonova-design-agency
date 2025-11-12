@@ -149,9 +149,7 @@
     }
 
     &__title {
-        @media #{$xs} {
-            text-align: center;
-        }
+        text-align: center;
 
         h1 {
             color: #fff;
@@ -817,9 +815,7 @@
     }
 
     &__title {
-        @media #{$xs} {
-            text-align: center;
-        }
+        text-align: center;
 
         h2 {
             font-size: 5.6rem;

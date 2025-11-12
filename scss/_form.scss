@@ -202,9 +202,7 @@
     }
 
     &__title {
-        @media #{$xs} {
-            text-align: center;
-        }
+        text-align: center;
 
         h2 {
             font-size: 5.6rem;
@@ -235,6 +233,7 @@
         align-items: center;
         gap: 2.4rem;
         flex-wrap: wrap;
+        justify-content: center;
 
         @media #{$xs} {
             justify-content: center;
@@ -247,14 +246,16 @@
             font-weight: 500;
             padding: 1.2rem 2.4rem;
             border-radius: 10rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
 
-            &:nth-child(1),
-            &:nth-child(3) {
-                background-color: #0073FF;
+            &:nth-child(1) {
+                background: #25D366;
             }
 
             &:nth-child(2) {
-                background: #25D366;
+                background-color: #0073FF;
 
             }
 

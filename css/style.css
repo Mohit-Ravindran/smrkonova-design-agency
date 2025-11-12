@@ -2699,10 +2699,8 @@
     padding: 14rem 0 4rem;
   }
 }
-@media (max-width: 767px) {
-  .head__title {
-    text-align: center;
-  }
+.head__title {
+  text-align: center;
 }
 .head__title h1 {
   color: #fff;
@@ -3337,10 +3335,8 @@
     padding: 5rem 0;
   }
 }
-@media (max-width: 767px) {
-  .local__title {
-    text-align: center;
-  }
+.local__title {
+  text-align: center;
 }
 .local__title h2 {
   font-size: 5.6rem;
@@ -6813,10 +6809,8 @@
     padding: 5rem 0;
   }
 }
-@media (max-width: 767px) {
-  .start__title {
-    text-align: center;
-  }
+.start__title {
+  text-align: center;
 }
 .start__title h2 {
   font-size: 5.6rem;
@@ -6846,6 +6840,7 @@
   align-items: center;
   gap: 2.4rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 @media (max-width: 767px) {
   .start__btn {
@@ -6859,12 +6854,15 @@
   font-weight: 500;
   padding: 1.2rem 2.4rem;
   border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
-.start__btn a:nth-child(1), .start__btn a:nth-child(3) {
-  background-color: #0073FF;
+.start__btn a:nth-child(1) {
+  background: #25D366;
 }
 .start__btn a:nth-child(2) {
-  background: #25D366;
+  background-color: #0073FF;
 }
 
 * {
