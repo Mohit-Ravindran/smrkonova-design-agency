@@ -194,7 +194,18 @@
   opacity: 0;
   visibility: hidden;
   transform: translate(-50%, 10px);
-  transition: all 0.3s ease;
+  transition: all 1s ease;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .mega-menu {
+    width: 60vw;
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .mega-menu {
+    width: 80vw;
+  }
 }
 
 .mega-menu__item {
@@ -209,6 +220,10 @@
   padding: 2rem;
   border-radius: 1.6rem;
   white-space: wrap !important;
+  border: 0.1rem solid transparent;
+}
+.mega-menu__item:hover {
+  border: 0.1rem solid #0073ff;
 }
 
 .mega-menu__item img {
@@ -216,6 +231,14 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .mega-menu__item img {
+    width: 8rem;
+    height: 8rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 .mega-menu__item h4 {
@@ -227,11 +250,20 @@
 
 /* Hover effect to show menu */
 .dropdowns:hover .mega-menu {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, 0);
   top: 2.9rem;
+  gap: 2rem;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .dropdowns:hover .mega-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
 
 .menu__dropdown {

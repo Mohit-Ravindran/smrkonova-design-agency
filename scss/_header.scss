@@ -217,7 +217,16 @@
   opacity: 0;
   visibility: hidden;
   transform: translate(-50%, 10px);
-  transition: all 0.3s ease;
+  transition: all 1s ease;
+
+  @media #{$lg} {
+    width: 60vw;
+    padding: 2rem;
+  }
+
+  @media #{$lp} {
+    width: 80vw;
+  }
 }
 
 
@@ -233,12 +242,23 @@
   padding: 2rem;
   border-radius: 1.6rem;
   white-space: wrap !important;
+  border: 0.1rem solid transparent;
+
+  &:hover {
+    border: 0.1rem solid $primary;
+  }
 }
 
 .mega-menu__item img {
   height: 120px;
   object-fit: cover;
   border-radius: 8px;
+
+  @media #{$lg} {
+    width: 8rem;
+    height: 8rem;
+    object-fit: contain;
+  }
 }
 
 .mega-menu__item h4 {
@@ -250,11 +270,19 @@
 
 /* Hover effect to show menu */
 .dropdowns:hover .mega-menu {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, 0);
   top: 2.9rem;
+  gap: 2rem;
+
+  @media #{$lg} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
 
 .menu__dropdown {
