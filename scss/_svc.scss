@@ -93,6 +93,14 @@
             align-items: center;
             gap: 2rem;
 
+            @media #{$xs} {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            @media #{$md} {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             li {
                 list-style-type: none;
                 display: flex;

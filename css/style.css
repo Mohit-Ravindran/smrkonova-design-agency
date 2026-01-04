@@ -6306,6 +6306,16 @@
   align-items: center;
   gap: 2rem;
 }
+@media (max-width: 767px) {
+  .abt__list ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .abt__list ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .abt__list ul li {
   list-style-type: none;
   display: flex;
@@ -6905,6 +6915,11 @@
 
 html {
   font-size: 62.5%;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {
