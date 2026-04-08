@@ -6938,6 +6938,17 @@ html {
   font-size: 62.5%;
 }
 
+html,
+body {
+  overflow-x: clip;
+}
+
+.expertise,
+.expertise__grid,
+.expertise__card {
+  overflow: visible;
+}
+
 body {
   font-family: "Poppins", sans-serif !important;
   font-size: 1.4rem;

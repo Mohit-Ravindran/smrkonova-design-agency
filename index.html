@@ -944,8 +944,14 @@
   </script>
   <script>
     AOS.init({
-      once: true // This makes all animations happen only once
+      once: true,
+      offset: 100,
     });
+
+    // Refresh AOS on Lenis scroll for smooth synchronization
+    if (typeof lenis !== 'undefined') {
+      lenis.on('scroll', AOS.refresh);
+    }
   </script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
